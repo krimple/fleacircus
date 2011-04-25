@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    
+<page:list id="pl_org_ete_fleacircus_model_Event" items="${events}" z="w/lgJp932IgJOai599uEVJhC5+c=">
+        <table:table data="${events}" id="l_org_ete_fleacircus_model_Event" path="/secure/events" z="wLtEWbksUi1Q/wfPuHYOuwFOB5w=">
+            <table:column date="true" dateTimePattern="${event_startdate_date_format}" id="c_org_ete_fleacircus_model_Event_startDate" property="startDate" z="vW74etoCzRb+Wfqhij4z+xwb+Kg="/>
+            <table:column date="true" dateTimePattern="${event_enddate_date_format}" id="c_org_ete_fleacircus_model_Event_endDate" property="endDate" z="H583X0AACjAqkakVrHuk01hFZ6I="/>
+            <table:column id="c_org_ete_fleacircus_model_Event_name" property="name" z="7IMXkUk9/AYyTLt+jQvIXvqv890="/>
+        </table:table>
+    </page:list>
+</div>

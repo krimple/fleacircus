@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_ete_fleacircus_model_Specialty" items="${specialities}" z="NKmJ9JUnlAuiKaDyQpPtbczsQLo=">
+        <table:table data="${specialities}" id="l_org_ete_fleacircus_model_Specialty" path="/secure/specialties" z="TDwRGez7bi3f+l2eTqlcrRPyJU0=">
+            <table:column id="c_org_ete_fleacircus_model_Specialty_name" property="name" z="2bcXzDg/QIR7RHhqc2AsvJ/iF8E="/>
+            <table:column id="c_org_ete_fleacircus_model_Specialty_fleas" property="fleas" z="WDGbUTmr4vgABUPEd/wxno20AIk="/>
+        </table:table>
+    </page:list>
+</div>

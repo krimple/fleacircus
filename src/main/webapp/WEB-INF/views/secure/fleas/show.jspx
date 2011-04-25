@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_org_ete_fleacircus_model_Flea" object="${flea}" path="/secure/fleas" z="EvY8iTCodpFaSTf/PagYc9+nH18=">
+        <field:display field="name" id="s_org_ete_fleacircus_model_Flea_name" object="${flea}" z="+zpgAKCaiY6UcoRprSXSNod78YM="/>
+        <field:display field="specialties" id="s_org_ete_fleacircus_model_Flea_specialties" object="${flea}" z="9OCcr1vq1nUmqBjtAJdXtzE8O8o="/>
+    </page:show>
+</div>

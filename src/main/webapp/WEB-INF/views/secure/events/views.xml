@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="secure/event/list">
+        <put-attribute name="body" value="/WEB-INF/views/secure/event/list.jspx"/>
+    </definition>
+<definition extends="default" name="secure/event/show">
+        <put-attribute name="body" value="/WEB-INF/views/secure/event/show.jspx"/>
+    </definition>
+<definition extends="default" name="secure/event/create">
+        <put-attribute name="body" value="/WEB-INF/views/secure/event/create.jspx"/>
+    </definition>
+<definition extends="default" name="secure/event/update">
+        <put-attribute name="body" value="/WEB-INF/views/secure/event/update.jspx"/>
+    </definition>
+<definition extends="default" name="secure/events/list">
+        <put-attribute name="body" value="/WEB-INF/views/secure/events/list.jspx"/>
+    </definition>
+<definition extends="default" name="secure/events/show">
+        <put-attribute name="body" value="/WEB-INF/views/secure/events/show.jspx"/>
+    </definition>
+<definition extends="default" name="secure/events/create">
+        <put-attribute name="body" value="/WEB-INF/views/secure/events/create.jspx"/>
+    </definition>
+<definition extends="default" name="secure/events/update">
+        <put-attribute name="body" value="/WEB-INF/views/secure/events/update.jspx"/>
+    </definition>
+</tiles-definitions>

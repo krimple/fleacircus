@@ -1,0 +1,69 @@
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log opened at 2011-04-22 14:05:39
+// [failed] project --topLevelPackage ete.demo.fleacircus --projectName fleacircus
+// [failed] project --topLevelPackage ete.demo.fleacircus --projectName fleacircus 
+quit
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log closed at 2011-04-22 14:06:03
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log opened at 2011-04-22 14:06:09
+// [failed] project --topLevelPackage org.ete.fleacircus --projectName fleacircus
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log opened at 2011-04-22 14:06:39
+project --topLevelPackage org.ete.fleacircus --projectName fleacircus
+persistence setup --database MYSQL --provider HIBERNATE 
+entity --class ~.model.Flea --testAutomatically 
+field string --fieldName name
+entity --class ~.model.Specialty --testAutomatically 
+field string --fieldName name
+field set --fieldName fleas --type ~.model.Flea
+entity --class ~.model.Events --testAutomatically 
+field date --fieldName startDate --type java.util.Date
+field date --fieldName endDate --type java.util.Date
+field string name
+osgi framework command ps
+osgi ps
+osgi find --bundleSymbolicName spring
+quit
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log closed at 2011-04-22 14:18:20
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log opened at 2011-04-22 14:22:21
+focus --class ~.model.Flea 
+field set --fieldName specialties --type ~.model.Specialty 
+controller all --package ~.web
+controller all --package ~.web
+controller all --package ~.web
+controller all --package ~.model.web
+perform command --mavenCommand jetty:run
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log opened at 2011-04-22 14:40:58
+quit
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log closed at 2011-04-22 14:41:49
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log opened at 2011-04-22 14:41:55
+quit
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log closed at 2011-04-22 14:42:45
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log opened at 2011-04-22 14:42:52
+security setup
+quit
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log closed at 2011-04-22 14:43:13
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log opened at 2011-04-22 15:36:36
+quit
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log closed at 2011-04-22 15:37:49
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log opened at 2011-04-22 15:41:27
+quit
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log closed at 2011-04-22 15:42:32
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log opened at 2011-04-22 15:49:02
+quit
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log closed at 2011-04-22 15:50:20
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log opened at 2011-04-22 15:53:37
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log opened at 2011-04-22 15:55:47
+quit
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log closed at 2011-04-22 16:00:47
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log opened at 2011-04-22 16:01:27
+quit
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log closed at 2011-04-22 16:02:32
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log opened at 2011-04-24 21:23:34
+quit
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log closed at 2011-04-24 21:25:13
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log opened at 2011-04-24 22:17:39
+quit
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log closed at 2011-04-24 22:18:24
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log opened at 2011-04-24 22:40:47
+quit
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log closed at 2011-04-24 22:41:13
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log opened at 2011-04-24 22:41:21
+logging setup --level DEBUG --package ROOT 
