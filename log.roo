@@ -74,3 +74,19 @@ quit
 test integration --entity ~.model.Event
 quit
 // Spring Roo 1.1.3.RELEASE [rev 4404ffb] log closed at 2011-04-24 23:11:12
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log opened at 2011-04-24 23:27:38
+quit
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log closed at 2011-04-24 23:28:00
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log opened at 2011-04-24 23:28:21
+quit
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log closed at 2011-04-24 23:28:47
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log opened at 2011-04-24 23:28:54
+jms setup --provider ACTIVEMQ_IN_MEMORY 
+jms listener class --class ~.messaging.ChatListener
+controller class --class ~.web.ChatController
+quit
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log closed at 2011-04-24 23:36:19
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log opened at 2011-04-24 23:44:26
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log opened at 2011-04-24 23:59:02
+quit
+// Spring Roo 1.1.3.RELEASE [rev 4404ffb] log closed at 2011-04-25 00:01:08

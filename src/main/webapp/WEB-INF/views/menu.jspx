@@ -14,5 +14,8 @@
     <menu:category id="c_event" z="AURyeKTmOObIARXqfI9DXukJNIE=">
             <menu:item id="i_event_new" messageCode="global_menu_new" url="/secure/events?form" z="R2hay6lsqcOFoKgsBoapOEw1cik="/>
         </menu:category>
+    <menu:category id="c_controller" z="nj8Dm3hojIyIEyPkwE1UMDIs+K8=">
+            <menu:item id="i_controller__chatindex_id" messageCode="global_generic" url="/chat/index" z="ejJ05bjBj+2XZL/Og6eyfEkzxxw="/>
+        </menu:category>
     </menu:menu>
 </div>
