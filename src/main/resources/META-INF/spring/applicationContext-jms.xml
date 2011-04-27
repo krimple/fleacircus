@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<beans xmlns="http://www.springframework.org/schema/beans" xmlns:amq="http://activemq.apache.org/schema/core"
-       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:jms="http://www.springframework.org/schema/jms"
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:amq="http://activemq.apache.org/schema/core"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:jms="http://www.springframework.org/schema/jms"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd                http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd                http://activemq.apache.org/schema/core http://activemq.apache.org/schema/core/activemq-core-5.2.0.xsd   http://www.springframework.org/schema/jms http://www.springframework.org/schema/jms/spring-jms-3.0.xsd">
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+          http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+          http://activemq.apache.org/schema/core http://activemq.apache.org/schema/core/activemq-core-5.2.0.xsd
+          http://www.springframework.org/schema/jms http://www.springframework.org/schema/jms/spring-jms-3.0.xsd">
 
     <!-- Embedded ActiveMQ Broker JMX MBean server enabled by default, access via: service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi -->
     <amq:broker persistent="false" useJmx="true">
@@ -29,8 +34,10 @@
     </bean>
 
     <amq:topic id="chatDestination" physicalName="chatDestination"/>
-    <jms:listener-container connection-factory="jmsFactory" destination-type="durableTopic"/>
-        <jms:listener destination="chatDestination" method="onMessage" ref="chatListener"/>
+    <jms:listener-container connection-factory="cachingConnectionFactory" destination-type="topic">
+        <jms:listener destination="chatDestination"
+                      ref="chatListener"/>
     </jms:listener-container>
+
     <bean class="org.ete.fleacircus.messaging.ChatListener" id="chatListener"/>
 </beans>

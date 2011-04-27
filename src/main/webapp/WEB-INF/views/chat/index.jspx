@@ -15,9 +15,23 @@
         </h3>
         <h5>Enter a message:</h5>
         <form:form commandName="chatMessage" action="sendMessage" method="POST">
-            <fields:editor id="messageEditor" label="message" field="message"/>
+            <fields:textarea id="messageEditor" label="message" field="message"/>
+            <fields:textarea id="messageOutput" label="response" />
             <input type="submit"/>
         </form:form>
-
     </util:panel>
+    <script type="text/JavaScript">
+        dojo.require('dojox.timing');
+        dojo.addOnLoad(function() {
+            t = new dojox.timing.Timer(1000);
+            t.onTick = function() {
+             console.info("One second elapsed");
+            }
+            t.onStart = function() {
+             console.info("Starting timer");
+            }
+            t.start();
+        });
+    </script>
+
 </div>
