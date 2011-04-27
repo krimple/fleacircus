@@ -3,3 +3,9 @@ target/
 *.ipr
 *.iws
 *.class
+.idea/
+.settings/
+.classpath
+.*.swp
+.project
+
