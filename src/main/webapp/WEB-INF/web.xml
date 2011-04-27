@@ -85,22 +85,28 @@
         <load-on-startup>1</load-on-startup>
     </servlet>
     
+    
+    
+    <servlet>
+        <servlet-name>requestFactory</servlet-name>
+        <servlet-class>com.google.gwt.requestfactory.server.RequestFactoryServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>fleacircus</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
     
+    
+    
+    <servlet-mapping>
+        <servlet-name>requestFactory</servlet-name>
+        <url-pattern>/gwtRequest</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>10</session-timeout>
     </session-config>
     
-    <error-page>
-        <exception-type>java.lang.Exception</exception-type>
-        <location>/uncaughtException</location>
-    </error-page>
     
-    <error-page>
-        <error-code>404</error-code>
-        <location>/resourceNotFound</location>
-    </error-page>
+    
+    
 </web-app>
